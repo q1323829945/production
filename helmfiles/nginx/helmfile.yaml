@@ -17,5 +17,6 @@ releases:
   - ../../versionStream/charts/ingress-nginx/ingress-nginx/values.yaml.gotmpl
   - ../../versionStream/charts/ingress-nginx/ingress-nginx/values.yaml.gotmpl
   - jx-values.yaml
+  - ..\..\versionStream\charts\ingress-nginx\ingress-nginx\values.yaml.gotmpl
 templates: {}
 renderedvalues: {}
