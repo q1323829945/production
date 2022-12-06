@@ -6,6 +6,6 @@ kind: Secret
 metadata:
   annotations:
     description: ""
-  name: jx-privkey
+  name: jx-test-dev
   namespace: jx-staging
 type: IngressTLS
