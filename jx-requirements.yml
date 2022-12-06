@@ -12,7 +12,7 @@ spec:
   ingress:
     annotations:
       nginx.ingress.kubernetes.io/proxy-body-size: "1000m"
-    domain: saas-ops.finline.app
+    domain: saas.finline.app
     externalDNS: false
     namespaceSubDomain: .
     tls:
