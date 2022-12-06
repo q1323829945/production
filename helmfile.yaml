@@ -2,5 +2,7 @@ filepath: ""
 helmfiles:
 - path: helmfiles/kuberhealthy/helmfile.yaml
 - path: helmfiles/nginx/helmfile.yaml
+releases:
+- chart: ./charts/mycharts
 templates: {}
 renderedvalues: {}
