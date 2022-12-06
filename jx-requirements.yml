@@ -10,13 +10,16 @@ spec:
     gitServer: https://github.com
     provider: kubernetes
   ingress:
-    domain: ""
+    annotations:
+      nginx.ingress.kubernetes.io/proxy-body-size: "1000m"
+    domain: saas-ops.finline.app
     externalDNS: false
     namespaceSubDomain: .
     tls:
-      email: ""
-      enabled: false
+      email: lizheng2@sunline.cn
+      enabled: true
       production: false
+      secretName: jx-privkey
   repository: bucketrepo
   secretStorage: local
   vault: {}
