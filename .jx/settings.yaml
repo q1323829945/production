@@ -1,0 +1,10 @@
+apiVersion: core.jenkins-x.io/v4beta1
+kind: Settings
+spec:
+  # lets replace the promote environments
+  ignoreDevEnvironments: true
+  promoteEnvironments:
+  - key: my-staging
+    owner: q1323829945
+    repository: production
+  - key: my-prod
