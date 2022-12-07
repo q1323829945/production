@@ -1,0 +1,10 @@
+# Source: mychart/templates/jx-staging-namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: jx-staging
+  annotations:
+    meta.helm.sh/release-name: 'charts'
+  labels:
+    gitops.jenkins-x.io/pipeline: 'cluster'
+    team: 'jx'

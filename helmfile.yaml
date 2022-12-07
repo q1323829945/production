@@ -1,6 +1,7 @@
 filepath: ""
-helmfiles:
 releases:
 - chart: ./charts/mycharts
+  name: charts
+  namespace: jx
 templates: {}
 renderedvalues: {}

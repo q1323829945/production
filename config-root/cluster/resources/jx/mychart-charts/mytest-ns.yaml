@@ -1,0 +1,10 @@
+# Source: mychart/templates/mytest-namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mytest
+  annotations:
+    meta.helm.sh/release-name: 'charts'
+  labels:
+    gitops.jenkins-x.io/pipeline: 'cluster'
+    team: 'jx'
