@@ -2,14 +2,14 @@
   path: helmfiles/jx-staging/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 0.0.1
+    appVersion: 0.0.2
     description: A Helm chart for Kubernetes
-    firstDeployed: "2022-12-07T07:27:25Z"
+    firstDeployed: "2022-12-07T07:38:01Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2022-12-07T07:27:25Z"
+    lastDeployed: "2022-12-07T07:38:01Z"
     name: test2
     releaseName: test2
     repositoryName: dev
     repositoryUrl: https://chartmuseum-jx.saas-ops.finline.app
     resourcePath: config-root/namespaces/jx-staging/test2
-    version: 0.0.1
+    version: 0.0.2

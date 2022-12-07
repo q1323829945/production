@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: test2
-        image: "nexus-docker.saas-ops.finline.app/q1323829945/test2:0.0.1"
+        image: "nexus-docker.saas-ops.finline.app/q1323829945/test2:0.0.2"
         ports:
         - containerPort: 8080
         imagePullPolicy: IfNotPresent
