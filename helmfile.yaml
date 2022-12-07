@@ -1,6 +1,5 @@
 filepath: ""
 helmfiles:
-- path: helmfiles/kuberhealthy/helmfile.yaml
 releases:
 - chart: ./charts/mycharts
 templates: {}
