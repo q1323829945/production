@@ -1,0 +1,28 @@
+# Source: test2/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/proxy-body-size: 1000m
+    meta.helm.sh/release-name: 'test2'
+  name: test2
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+  - http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: test2
+            port:
+              number: 8080
+        path: /
+    host: test2.saas.finline.app
+  tls:
+  - hosts:
+    - test2.saas.finline.app
+    secretName: "jx-privkey"
