@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: https://chartmuseum-jx.saas-ops.finline.app
+releases:
+- chart: dev/test2
+  version: 0.0.1
+  name: test2
+templates: {}
+renderedvalues: {}

@@ -1,4 +1,6 @@
 filepath: ""
+helmfiles:
+- path: helmfiles/jx-staging/helmfile.yaml
 releases:
 - chart: ./charts/mycharts
   name: charts
