@@ -1,0 +1,17 @@
+# Source: h5-test/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: h5-test
+  annotations:
+    meta.helm.sh/release-name: 'h5-test'
+  namespace: my-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: h5-test-h5-test
