@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 namespace: my-staging
 repositories:
 - name: dev
@@ -7,5 +11,7 @@ releases:
 - chart: dev/h5-test
   version: 0.0.1
   name: h5-test
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

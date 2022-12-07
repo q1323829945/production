@@ -1,0 +1,28 @@
+# Source: h5-test/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: h5-test-h5-test
+  labels:
+    app: h5-test-h5-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'h5-test'
+    wave.pusher.com/update-on-config-change: 'true'
+  namespace: my-staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: h5-test-h5-test
+  template:
+    metadata:
+      labels:
+        app: h5-test-h5-test
+    spec:
+      containers:
+      - name: h5-test
+        image: "nexus-docker.saas-ops.finline.app/q1323829945/h5-test:0.0.1"
+        ports:
+        - containerPort: 80
+        imagePullPolicy: IfNotPresent
