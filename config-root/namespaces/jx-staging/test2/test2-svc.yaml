@@ -1,0 +1,17 @@
+# Source: test2/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: test2
+  annotations:
+    meta.helm.sh/release-name: 'test2'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app: test2-test2
