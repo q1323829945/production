@@ -17,14 +17,14 @@
   path: helmfiles/my-staging/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 0.0.2
+    appVersion: 0.0.3
     description: A Helm chart for Kubernetes
-    firstDeployed: "2022-12-07T08:21:02Z"
+    firstDeployed: "2022-12-08T02:39:12Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2022-12-07T08:21:02Z"
+    lastDeployed: "2022-12-08T02:39:12Z"
     name: h5-test
     releaseName: h5-test
     repositoryName: dev
     repositoryUrl: https://chartmuseum-jx.saas-ops.finline.app
     resourcePath: config-root/namespaces/my-staging/h5-test
-    version: 0.0.2
+    version: 0.0.3
