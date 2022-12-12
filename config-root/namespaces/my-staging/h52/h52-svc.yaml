@@ -1,0 +1,17 @@
+# Source: h52/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: h52
+  annotations:
+    meta.helm.sh/release-name: 'h52'
+  namespace: my-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app: h52-h52

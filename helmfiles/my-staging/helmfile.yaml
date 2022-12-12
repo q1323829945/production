@@ -16,5 +16,7 @@ releases:
 - chart: dev/h52
   version: 0.0.19
   name: h52
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
