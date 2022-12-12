@@ -1,0 +1,28 @@
+# Source: h52/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: h52-h52
+  labels:
+    app: h52-h52
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'h52'
+    wave.pusher.com/update-on-config-change: 'true'
+  namespace: my-staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: h52-h52
+  template:
+    metadata:
+      labels:
+        app: h52-h52
+    spec:
+      containers:
+      - name: h52
+        image: "nexus-docker.saas-ops.finline.app/q1323829945/h52:0.0.19"
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
