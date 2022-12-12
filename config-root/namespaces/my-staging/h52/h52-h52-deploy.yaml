@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: h52
-        image: "nexus-docker.saas-ops.finline.app/q1323829945/h52:0.0.19"
+        image: "nexus-docker.saas-ops.finline.app/q1323829945/h52:0.0.24"
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
